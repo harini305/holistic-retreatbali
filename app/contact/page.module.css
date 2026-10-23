@@ -1,0 +1,136 @@
+.layout {
+  display: grid;
+  gap: 3rem;
+}
+
+.formTitle {
+  margin-bottom: 1.25rem;
+}
+
+.direct h2 {
+  margin-bottom: 1.25rem;
+  font-size: var(--fs-h3);
+}
+
+.direct ul {
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.direct li {
+  display: flex;
+  gap: 0.9rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.direct li > svg {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 0.15rem;
+  color: var(--navy);
+}
+
+.direct li > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.label {
+  font-size: var(--fs-label);
+  color: var(--ink-soft);
+}
+
+.direct a {
+  font-weight: 500;
+}
+
+.direct address {
+  font-style: normal;
+}
+
+@media (min-width: 960px) {
+  .layout {
+    grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.85fr);
+    gap: clamp(3rem, 5vw, 5rem);
+    align-items: start;
+  }
+
+  /* Pinned with GSAP ScrollTrigger (data-pin) while the form scrolls. */
+  .direct {
+    padding-top: 3.25rem;
+  }
+}
+
+.faqSection {
+  background: var(--sand);
+}
+
+.faqGrid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+.faqGrid h2 {
+  margin-bottom: 0.75rem;
+}
+
+.faq {
+  border-top: 1px solid var(--line);
+}
+
+.faq details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq summary {
+  position: relative;
+  display: block;
+  padding: 1.1rem 2.5rem 1.1rem 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--navy);
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "";
+  position: absolute;
+  right: 0.35rem;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--navy);
+  border-bottom: 2px solid var(--navy);
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.25s var(--ease);
+}
+
+.faq details[open] summary::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
+
+.faq details p {
+  padding-bottom: 1.25rem;
+  max-width: 640px;
+  color: var(--ink-soft);
+}
+
+@media (min-width: 960px) {
+  .faqGrid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+    gap: clamp(3rem, 6vw, 6rem);
+  }
+}

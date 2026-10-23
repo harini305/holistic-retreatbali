@@ -1,0 +1,26 @@
+.cta {
+  padding-block: clamp(2rem, 1.75rem + 1.5vw, 3rem);
+  background: var(--sand);
+  border-top: 1px solid var(--line);
+}
+
+.inner {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.inner h2 {
+  margin-bottom: 0.5rem;
+}
+
+.inner p {
+  color: var(--ink-soft);
+}
+
+@media (min-width: 900px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3rem;
+  }
+}

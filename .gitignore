@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+*.log
+.env*
+.vercel/
+
+# Phase 1 audit evidence stays local (not needed to build the site)
+docs/

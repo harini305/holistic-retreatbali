@@ -1,0 +1,77 @@
+{
+  "sanur-dawn": {
+    "src": "/images/sanur-dawn.webp",
+    "width": 1600,
+    "height": 720
+  },
+  "guests-healer": {
+    "src": "/images/guests-healer.webp",
+    "width": 1200,
+    "height": 675
+  },
+  "temple-purification": {
+    "src": "/images/temple-purification.webp",
+    "width": 1152,
+    "height": 864
+  },
+  "temple-priest": {
+    "src": "/images/temple-priest.webp",
+    "width": 1000,
+    "height": 750
+  },
+  "villa-pavilion": {
+    "src": "/images/villa-pavilion.webp",
+    "width": 1024,
+    "height": 768
+  },
+  "villa-garden": {
+    "src": "/images/villa-garden.webp",
+    "width": 600,
+    "height": 800
+  },
+  "villa-entrance": {
+    "src": "/images/villa-entrance.webp",
+    "width": 720,
+    "height": 960
+  },
+  "villa-bedroom": {
+    "src": "/images/villa-bedroom.webp",
+    "width": 600,
+    "height": 450
+  },
+  "villa-courtyard": {
+    "src": "/images/villa-courtyard.webp",
+    "width": 1280,
+    "height": 960
+  },
+  "food-spread": {
+    "src": "/images/food-spread.webp",
+    "width": 640,
+    "height": 480
+  },
+  "sound-healing": {
+    "src": "/images/sound-healing.webp",
+    "width": 768,
+    "height": 1024
+  },
+  "table-group": {
+    "src": "/images/table-group.webp",
+    "width": 960,
+    "height": 720
+  },
+  "beach-group": {
+    "src": "/images/beach-group.webp",
+    "width": 1240,
+    "height": 930
+  },
+  "mitch-portrait": {
+    "src": "/images/mitch-portrait.webp",
+    "width": 597,
+    "height": 746
+  },
+  "logo": {
+    "src": "/images/logo-holistic-retreat-bali.webp",
+    "width": 480,
+    "height": 127
+  }
+}
