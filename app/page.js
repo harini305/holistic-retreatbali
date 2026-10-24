@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Experience */}
-      <section id="experience" className="section" aria-labelledby="experience-title">
+      <section id="experience" className="section screen-section" aria-labelledby="experience-title">
         <div className={`container ${styles.split}`}>
           <div className={styles.splitText} data-reveal>
             <h2 id="experience-title">Most people arrive tired, unsure, and quietly hoping something will shift</h2>
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* The week */}
-      <section id="week" className="section" aria-labelledby="week-title">
+      <section id="week" className="section screen-section" aria-labelledby="week-title">
         <div className="container">
           <div className={styles.weekHead} data-reveal>
             <h2 id="week-title">Structured enough that you never have to think</h2>
@@ -231,7 +231,7 @@ export default function Home() {
       </section>
 
       {/* Villa */}
-      <section id="villa" className={`section ${styles.sand}`} aria-labelledby="villa-title">
+      <section id="villa" className={`section screen-section ${styles.sand}`} aria-labelledby="villa-title">
         <div className={`container ${styles.villa}`}>
           <div className={styles.villaText} data-reveal>
             <h2 id="villa-title">A place to retreat to, not just sleep in</h2>

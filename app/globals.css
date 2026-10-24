@@ -157,6 +157,15 @@ ol {
   padding-block: var(--section-y);
 }
 
+/* Sections that navigation links jump to fill at least the screen below the
+   sticky header, so neither neighbouring section shows when a link lands. */
+.screen-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100svh - var(--header-h) - 1px);
+}
+
 .lead {
   font-size: var(--fs-lead);
   line-height: 1.6;

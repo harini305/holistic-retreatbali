@@ -26,13 +26,16 @@ function prefersReducedMotion() {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-// Scrolls so the section's first heading sits just below the sticky header.
+// Full-screen sections (.screen-section) start exactly at the header's bottom edge,
+// so they fill the view on their own; other sections bring their first heading
+// to just below the sticky header.
 export function scrollToSection(id, behavior) {
   const section = document.getElementById(id);
   if (!section) return false;
-  const target = section.querySelector("h1, h2") || section;
+  const fullScreen = section.classList.contains("screen-section");
+  const target = fullScreen ? section : section.querySelector("h1, h2") || section;
   window.scrollTo({
-    top: Math.max(0, documentTop(target) - headerHeight() - GAP),
+    top: Math.max(0, documentTop(target) - headerHeight() - (fullScreen ? 0 : GAP)),
     behavior: behavior || (prefersReducedMotion() ? "instant" : "smooth"),
   });
   return true;
